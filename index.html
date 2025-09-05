@@ -69,6 +69,8 @@
       line-height: 1.6em;
       margin-bottom: 15px;
     }
+
+    /* Planos */
     .planos {
       display: flex;
       flex-wrap: wrap;
@@ -132,6 +134,47 @@
     .botao:hover {
       background: #6d28d9;
     }
+
+    /* Avaliações */
+    .avaliacoes {
+      background: #111;
+      padding: 60px 20px;
+    }
+    .avaliacoes h2 {
+      color: #c084fc;
+      margin-bottom: 30px;
+    }
+    .carrossel {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 15px;
+    }
+    .review {
+      background: #1a1a1a;
+      border-radius: 12px;
+      min-width: 300px;
+      max-width: 320px;
+      scroll-snap-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+      transition: 0.3s;
+    }
+    .review:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(147, 51, 234, 0.6);
+    }
+    .review img {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+    }
+    .review p {
+      padding: 15px;
+      font-size: 0.95em;
+      line-height: 1.5em;
+      color: #d4d4d4;
+    }
+
     footer {
       padding: 20px;
       background: #111;
@@ -154,35 +197,15 @@
     <a href="https://discord.gg/rM2k6ZUvPV" target="_blank" class="rede-botao">Discord</a>
   </div>
 
-  <!-- Seção de apresentação (texto grande) -->
+  <!-- Seção de apresentação -->
   <section>
     <div class="sobre">
       <h2>👋 Olá, eu sou o Astro!</h2>
-      <p>
-        Criei este servidor e a otimização porque sei como é frustrante jogar com o PC travando, lagando e sem desempenho.  
-        A ideia nasceu depois de ver muitos amigos e pessoas da comunidade sofrendo com jogos rodando mal, mesmo em computadores bons.  
-        Eu queria trazer uma solução acessível, prática e realmente eficaz.
-      </p>
-      <p>
-        O <b>nosso servidor</b> é mais do que só um espaço para divulgar a otimização. Ele é um lugar de comunidade,  
-        onde você pode trocar ideias, compartilhar resultados, tirar dúvidas e receber suporte direto comigo.  
-        Aqui todo mundo aprende junto, ajuda uns aos outros e evolui para aproveitar o máximo do PC.
-      </p>
-      <p>
-        As otimizações foram criadas com muito cuidado e testes, sempre pensando na <b>segurança</b> e <b>desempenho real</b>,  
-        sem “milagres” falsos ou programas suspeitos. O objetivo é simples:  
-        <b>deixar seu PC mais rápido, estável e pronto para rodar qualquer jogo com mais FPS.</b>
-      </p>
-      <p>
-        Temos duas versões disponíveis:  
-        <b>DELUXE</b>, uma versão completa para quem quer um bom desempenho por um preço acessível (R$7),  
-        e a <b>PRO</b>, que é a versão mais avançada, trazendo o máximo de performance que conseguimos extrair do seu sistema (R$12).  
-      </p>
-      <p>
-        Se você está cansado de jogar com travamentos, esse é o lugar certo. 🚀  
-        Aqui você vai ter uma comunidade ativa, suporte personalizado e otimizações que realmente funcionam.  
-        Além disso, estou sempre atualizando o servidor e as otimizações com melhorias, novidades e conteúdos exclusivos para você.
-      </p>
+      <p>Criei este servidor e a otimização porque sei como é frustrante jogar com o PC travando...</p>
+      <p>O <b>nosso servidor</b> é mais do que só um espaço para divulgar a otimização...</p>
+      <p>As otimizações foram criadas com muito cuidado e testes...</p>
+      <p>Temos duas versões disponíveis: DELUXE e PRO...</p>
+      <p>Se você está cansado de jogar com travamentos, esse é o lugar certo 🚀</p>
     </div>
   </section>
 
@@ -199,7 +222,6 @@
         <p><b>A PRO é a mais completa e a melhor que temos!</b></p>
         <p class="preco">💰 R$12</p>
       </div>
-
       <div class="card delux">
         <h3>Otimização DELUXE</h3>
         <p>✔ Mais FPS</p>
@@ -209,6 +231,29 @@
       </div>
     </div>
     <a href="https://discord.gg/rM2k6ZUvPV" target="_blank" class="botao">💬 Entrar no servidor do Discord</a>
+  </section>
+
+  <!-- Avaliações -->
+  <section class="avaliacoes">
+    <h2>⭐ Avaliações de Quem Testou</h2>
+    <div class="carrossel">
+      <div class="review">
+        <img src="avaliacao1.jpg" alt="Avaliação 1">
+        <p>"A otimização é muito boa, tô pegando 200 fps no Roblox tudo máximo" – Markus</p>
+      </div>
+      <div class="review">
+        <img src="avaliacao2.jpg" alt="Avaliação 2">
+        <p>"Muito top de mais produto muito bom, meu pc ficou mil vezes melhor" – GTA</p>
+      </div>
+      <div class="review">
+        <img src="avaliacao3.jpg" alt="Avaliação 3">
+        <p>"Sai de 20 fps pra 70 fps, recomendo muito mesmo" – Amateu-:-</p>
+      </div>
+      <div class="review">
+        <img src="avaliacao4.jpg" alt="Avaliação 4">
+        <p>"Pc tá máquina agora, finalmente rodando suave!" – Gustavinh7</p>
+      </div>
+    </div>
   </section>
 
   <footer>
